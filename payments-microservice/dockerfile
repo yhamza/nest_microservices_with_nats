@@ -1,0 +1,11 @@
+FROM node:20
+
+WORKDIR /payement-microservice/src/app
+
+COPY package.json .
+COPY package-lock.json .
+
+RUN npm i
+
+COPY  . .
+
